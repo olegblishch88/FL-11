@@ -12,18 +12,19 @@
     <div id="main">
       <div id="container">
         <div id="content" role="main">
-          <header>
+          <header id="home">
             <img src="logo.png" alt="logo" />
             <h1>HTML Elements</h1>
             <hr />
             <nav>
-              <a href="">Home</a>
-              <a href="">Headers</a>
-              <a href="">Text formats</a>
-              <a href="">List</a>
-              <a href="">Table</a>
-              <a href="">Blockqoutes</a>
+              <a href="#home">Home</a>
+              <a href="#headers">Headers</a>
+              <a href="#text-formats">Text formats</a>
+              <a href="#list">List</a>
+              <a href="#table">Table</a>
+              <a href="#blockqoutes">Blockqoutes</a>
             </nav>
+            <hr>
           </header>
 
           <main>
@@ -52,9 +53,9 @@
               are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi
               imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu
               volutpat enim diam eget metus. To copy a file type
-              COPY
-              filename.
-              <strike>Dinner`s at 5:00.</strike>
+                <kbd>COPY</kbd>
+              <i>filename.</i>
+              <del>Dinner`s at 5:00.</del>
               <mark>Let's make that 7.</mark>
               This <s>text</s> has been struck.
             </p>
@@ -63,7 +64,7 @@
               because we have to use only one h1 on the page, and it is commonly used inside header
             </p>
           </main>
-          <section>
+          <section id="headers">
             <h2>Header 2</h2>
             <h3>Header 3</h3>
             <h4>Header 4</h4>
@@ -71,9 +72,24 @@
             <h6>Header 6</h6>
           </section>
           <hr>
+          <section id="text-formats">
+            <header>
+              <h2>Text formats</h2>
+            </header>
+            <h3>Article Text</h3>
+            <article>
+              <header>
+                <h2>Article title</h2>
+                <h4>Article description</h4>
+              </header>
+            </article>
+            <h3>Preformatted Text</h3>
+          </section>
+
+
           <pre>
-<b>Text</b>
-  in a <b>pre</b> element
+<strong>Text</strong>
+  in a <strong>pre</strong> element
     is displayed in a fixed-width
   font, and it preserves
   both           spaces and
@@ -90,7 +106,7 @@ justify-content: center;
 </code>
           </pre>
 
-          <h2>Unordered Product List</h2>
+          <h2 id="list">Unordered Product List</h2>
           <ul>
             <li>Eggs</li>
             <li>Meat
@@ -118,13 +134,13 @@ justify-content: center;
 
           <h3>Definition List</h3>
           <dl>
-            <dt><b>HTML</b></dt>
+            <dt><strong>HTML</strong></dt>
             <dd>HTML is the standard markup language for Web pages</dd>
 
-            <dt><b>CSS</b></dt>
+            <dt><strong>CSS</strong></dt>
             <dd>CSS describes how HTML elements are to be displayed</dd>
 
-            <dt><b>JavaScript</b></dt>
+            <dt><strong>JavaScript</strong></dt>
             <dd>JavaScript is the Programming Language for the Web</dd>
           </dl>
 
@@ -138,36 +154,41 @@ justify-content: center;
 
           <hr>
 
-          <h2>Table</h2>
+          <h2 id="table">Table</h2>
           <table>
 
-            <th>Cities</th>
-            <th>Technologies</th>
-
-            <tr>
-              <td>Lviv</td>
-              <td>HTML</td>
-            </tr>
-            <tr>
-              <td>Vinnytsia</td>
-              <td>CSS</td>
-            </tr>
-            <tr>
-                <td>Dnipro</td>
-                <td>JavaScript</td>
-            </tr>
-            <tr>
-                <td>Kharkiv</td>
-                <td>Angular</td>
-            </tr>
-            <tr>
-                <td>Kyiv</td>
-                <td>ReactJS</td>
-            </tr>
+              <thead>
+                  <tr>
+                    <th>Cities</th>
+                    <th>Technologies</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Lviv</td>
+                    <td>HTML</td>
+                  </tr>
+                  <tr>
+                    <td>Vinnytsia</td>
+                    <td>CSS</td>
+                  </tr>
+                  <tr>
+                    <td>Dnipro</td>
+                    <td>JavaScript</td>
+                  </tr>
+                  <tr>
+                    <td>Kharkiv</td>
+                    <td>Angular</td>
+                  </tr>
+                  <tr>
+                    <td>Kyiv</td>
+                    <td>ReactJS</td>
+                  </tr>
+                </tbody>
 
           </table>
 
-          <h2>Blockqoutes</h2>
+          <h2 id="blockqoutes">Blockqoutes</h2>
           <p>Let's keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.</p>
           <blockquote>
               <p>
