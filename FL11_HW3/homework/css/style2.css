@@ -194,8 +194,7 @@ main {
     font-family: "Source Sans Pro", sans-serif;
     color: white;
     font-size: 17px;
-    cursor: pointer;
-    font-weight: 600; }
+    cursor: pointer; }
 
 footer {
   max-width: 100%;

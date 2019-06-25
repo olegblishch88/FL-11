@@ -6,14 +6,26 @@
 body{
     background-color: $mainBackgroundSection;
 }
+$font-family: ("heading": $fontFamilyHeadings, "paragraph": $fontFamilyParagraph, "peaks": $fontFamilyPeaks);
 @mixin font-family-text {
-    font-family: $fontFamilyParagraph;
+    font-family: map-get($font-family, "paragraph");
 }
 @mixin line {
     position: absolute;
     content: "";
     background-color: $HeadingUnderline;
     z-index: -1;
+}
+@mixin button {
+    width: 140px;
+    height: 50px;
+    border: none;
+    border-radius: 2px;
+    background: $headerColorButton;
+    font-family: map-get($font-family, "heading");
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
 }
 header{
     max-width: 100%;
@@ -35,7 +47,7 @@ header{
         .header_heading{
             width: 500px;
             font-size: 60px;
-            font-family: $fontFamilyHeadings;
+            font-family: map-get($font-family, "heading");
             margin-top: 40px;
             position: relative;
             z-index: 0;
@@ -59,15 +71,7 @@ header{
             text-align: left;
         }
         .header_button{
-            width: 140px;
-            height: 50px;
-            border: none;
-            border-radius: 2px;
-            background: $headerColorButton;
-            font-family: $fontFamilyHeadings;
-            color: white;
-            font-size: 17px;
-            cursor: pointer;
+            @include button;
             margin-top: 60px;
             font-weight: 600;
         }
@@ -112,7 +116,7 @@ main{
         font-size: 40px;
         font-weight: 600;
         color: $headerColorTextAndBg;
-        font-family: $fontFamilyHeadings;
+        font-family: map-get($font-family, "heading");
         position: relative;
         z-index: 0;
     }
@@ -147,7 +151,7 @@ main{
             .section_card_heading{
                 font-size: 25px;
                 font-weight: 600;
-                font-family: $fontFamilyHeadings;
+                font-family: map-get($font-family, "heading");
                 position: relative;
                 z-index: 0;
             }
@@ -189,7 +193,7 @@ main{
             font-size: 30px;
             font-weight: bold;
             color: $headerColorTextAndBg;
-            font-family: $fontFamilyHeadings;
+            font-family: map-get($font-family, "heading");
             position: relative;
             z-index: 0;
         }
@@ -206,16 +210,7 @@ main{
         }
     }
     button{
-            width: 140px;
-            height: 50px;
-            border: none;
-            border-radius: 2px;
-            background: $headerColorButton;
-            font-family: $fontFamilyHeadings;
-            color: white;
-            font-size: 17px;
-            cursor: pointer;
-            font-weight: 600;
+        @include button;
     }
 }
 footer{
@@ -245,7 +240,7 @@ footer{
                 flex-direction: column;
                 text-align: center;
                 font-size: 25px;
-                font-family: $fontFamilyPeaks;
+                font-family: map-get($font-family, "peaks");;
                 font-weight: 600;
                 color: whitesmoke;
                 span{
