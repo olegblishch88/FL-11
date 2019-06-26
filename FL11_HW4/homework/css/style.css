@@ -5,15 +5,15 @@
     font-family: 'Open Sans';
 }
 body{
-    max-width: 100%;
-    background: #f3f3f3;
+    min-width: 900px;
+    max-width: 1920px;
 }
 header{
     height: 100vh;
+    width: 100%;
     background-image: url("../img/sample2.jpg");
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
 }
 .header-elements{
     color: #FFFFFF;
@@ -66,6 +66,36 @@ header{
     border: 2px solid white;
     background: rgba(0,0,0,0.4);
 }
+.triangle-content{
+    width: 100%;
+    height: 400px;
+    font-size: 14px;
+    background:linear-gradient(14deg, #F3F3F3 50%, black 0%);
+}
+.top-right-text-content{
+    width: 100%;
+    height: 250px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 30px 0 0;
+}
+.top-right-text-content p{
+    width: 40%;
+}
+.bottom-left-text-content{
+    width: 100%;
+    height: 100px;
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 40px;
+}
+.bottom-left-text-content p{
+    width: 40%;
+}
 a{
     color: #FFFFFF;
     text-decoration: none;
@@ -73,13 +103,13 @@ a{
 
 #top{
     height: 800px;
+    background: #f3f3f3;
 }
 section h2{
     display: flex;
     justify-content: center;
     padding: 30px 0 30px 0;
 }
-
 .top-content, .middle-content{
     width: 85%;
     display: flex;
@@ -140,8 +170,8 @@ section h2{
     margin: 0% auto;
 }
 .bottom-img-card-first, .bottom-img-card-second, .bottom-img-card-third, .bottom-img-card-fourth{
-    height: 400px;
-    width: 300px;
+    height: 68%;
+    width: 22%;
     background-size: cover;
 }
 .bottom-img-card-first{
@@ -177,11 +207,13 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background: #f3f3f3;
 }
 .footer-text-content{
-    width: 1400px;
-    padding: 30px 0 0 0;
+    width: 100%;
+    padding: 30px 20px 0 30px;
     margin: 0 auto;
+    font-size: 14px;
 }
 .footer-form{
     width: 100%;
@@ -213,7 +245,6 @@ footer{
     border: none;
     color: #FFFFFF;
 }
-
 .footer-menu{
     width: 100%;
     background: white;
@@ -263,17 +294,17 @@ span{
     text-align: center;
 }
 .bottom-card-center{
-    width: 245px;
-    height: 40px;
+    width: 80%;
+    height: 10%;
     background: #097774;
     text-align: center;
     display: block;
-    margin-top: 65%;
-    margin-left:27px;
+    margin: 0% auto;
+    margin-top: 200px;
     font-size: 30px;
 }
 .bottom-card-bottom-left{
-    width: 50%;
+    width: 200px;
     display: block;
     margin-top: 135px;
     margin-left: 10px;
