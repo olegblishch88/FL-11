@@ -58,15 +58,12 @@ a{
  ul li:hover{
   background: #b8b8b8;
 }
-
-
 main{
   width: 100%;
   padding: 20px 0 0 0;
   display: flex;
   justify-content: center;
 }
-/*  FIRST LINE   */ 
 .line-content{
   display: flex;
 }
@@ -100,9 +97,6 @@ main{
   align-items: center;
   padding: 0 10px 10px 0;
 }
-
-
-/*  SECOND LINE   */ 
 .second-img{
   background-image: url("../img/post2.jpg");
   background-position: center;
@@ -135,8 +129,6 @@ main{
   align-items: center;
   padding: 0 0 0 10px;
 }
-
-/* THIRD LINE */
 .third-img{
   background-image:url("../img/post3.jpg");
   background-position: center;
@@ -144,10 +136,6 @@ main{
   height: 60vh; 
   background-size: cover;
 }
-
-
-/* FOURTH LINE   */
-
 .fourth-img{
   background-image:url("../img/post4.jpg");
   background-position: center;
@@ -155,9 +143,6 @@ main{
   height: 60vh; 
   background-size: cover;
 }
-
-/* FIFTH LINE */ 
-
 .fifth{
   justify-content: space-between;
   flex-direction: column;
@@ -168,9 +153,6 @@ main{
   font-weight: 100;
   font-size: 6vh;
 }
-
-/* FOOOTER */ 
-
 footer{
   display: flex;
   justify-content: space-between;
@@ -185,10 +167,6 @@ footer{
 .right{
   padding:  0 30px 0 0;
 }
-
-
-/*ASIDE Content */
-
 aside{
   padding: 0 0 0 40px;
 }
@@ -225,18 +203,9 @@ aside{
   padding: 0 20px 10px 20px;
   text-align: center;
 }
-
-
-
-
-
 .post-1:hover, .post-2:hover, .post-3:hover, .post-4:hover, .fifth:hover, .image:hover{
   opacity: 0.5;
 }
-
-
-
-
 @media screen and (max-width: 768px){
   header{
     height: 200px;
