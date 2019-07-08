@@ -2,7 +2,6 @@ let playGame = confirm('Do you want to play a game?');
 if (!playGame) {
     alert('You did not become a billionaire, but can!');
 } else {
-
     let attempts = 3;
     let maxPrize = 100;
     let range = 8;
@@ -58,6 +57,15 @@ if (!playGame) {
             } else {
                 alert('Thank you for your participation. Your prize is: ' + possiblePrize);
                 break;
+            }
+        }else if(askUser !== randomInteger && attempts === 1){
+            possiblePrize = 0;
+            alert('Thank you for your participation. Your prize is ' + possiblePrize);
+            if(confirm('Do you want to play again?')){
+                totalPrize = 0;
+                possiblePrize = maxPrize;
+                attempts = three;
+                continue;
             }
         }
         attempts--;
