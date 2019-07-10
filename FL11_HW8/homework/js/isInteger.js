@@ -1,4 +1,8 @@
 function isInteger(n){
-    return Number.isInteger(n);
+    if(n === parseInt(n)){
+        return true;
+    }else{
+        return false;
+    }
 }
-console.log(isInteger(5));
+isInteger(5);
