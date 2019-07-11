@@ -1,13 +1,10 @@
-function reversedNum(num) {
-    return (
-        parseFloat(
-            num
-                .toString()
-                .split('')
-                .reverse()
-                .join('')
-        ) * Math.sign(num)
-    )
+function reverseNumber(num){
+    num = String(num);
+    let reverseNum = '';
+    for(let i = num.length - 1; i >= 0; i-- ){
+        reverseNum += num[i];
+    }
+    return parseInt(reverseNum) * Math.sign(num);
 }
 
-console.log(reversedNum(10000));
+reverseNumber(-345);
