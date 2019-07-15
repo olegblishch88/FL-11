@@ -1,4 +1,3 @@
-/* TASK 0 */
 function getNumbers(str) {
     let arr = str.split('');
     let result = [];
@@ -11,7 +10,6 @@ function getNumbers(str) {
 }
 getNumbers('n1um3ber95');
 
-/* TASK 1 */
 function findTypes() {
     const object = {};
     let dataType;
@@ -27,7 +25,6 @@ function findTypes() {
 }
 findTypes(123,'asd', null);
 
-/* TASK 2 */ 
 function executeforEach(arr, callback){
     for(let i = 0; i <arr.length; i++){
         callback(arr[i]);
@@ -37,7 +34,6 @@ executeforEach([1,2,3], function(i){
     console.log(i);
 })
 
-/* TASK 3 */
 function mapArray(arr, callBack) {
 	let transformedArr = [];
 	executeforEach(arr, function(num) {
@@ -49,7 +45,6 @@ mapArray([2, 5, 8], function(el) {
 	return el + 3 
 })
 
-/* TASK 4 */
 function filterArray(arr, callBack) {
 	let filteredArr = [];
 	executeforEach(arr, function(num) {
@@ -64,7 +59,21 @@ filterArray([2, 5, 8], function(el) {
 	return el > 3 
 })
 
-/* TASK 5 */
+function daysBetween() {
+    let first = new Date('2016-03-18T00:00:00');
+    let second = new Date('2016-04-19T00:00:00');
+    let diffrence = second.getDate() - first.getDate();
+    return diffrence;
+}
+daysBetween();
+
+function canConvertToDate(args){
+    let date = new Date(args);
+    return !isNaN(Date.parse(date));
+}
+canConvertToDate('2016-13-18T00:00:00');
+canConvertToDate('2016-03-18T00:00:00');
+
 
 function showFormattedDate(date) {
     let monthArr = ['Jan', 'Feb', 'Mar', 'Apr', 'May','Jun','Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -120,9 +129,6 @@ function getAmountOfAdultPeople(arr){
 }
 
 console.log(getAmountOfAdultPeople(data)); 
-
-
-
 
 function keys(obj) {
 	let arrOfKeys = [];
